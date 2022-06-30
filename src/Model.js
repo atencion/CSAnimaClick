@@ -19,7 +19,7 @@ export default function Model(props) {
   const [hovered, setHovered] = useState(false)
   const [index, setIndex] = useState(4)
   // Animate the selection halo
-  const { color, scale } = useSpring({ scale: hovered ? [1.15, 1.15, 1] : [1, 1, 1], color: hovered ? "hotpink" : "aquamarine" })
+  const { color, scale } = useSpring({ scale: hovered ? [1.15, 1.15, 1] : [1, 1, 1], color: hovered ? "blue" : "aquamarine" })
   // Change cursor on hover-state
   useEffect(() => void (document.body.style.cursor = hovered ? "pointer" : "auto"), [hovered])
   // Change animation when the index changes
